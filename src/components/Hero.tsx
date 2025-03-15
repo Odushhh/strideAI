@@ -9,17 +9,17 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 animate-fade-in">
             <div className="chip">AI-Powered Running Coach</div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-white leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight text-gray-900 leading-tight">
               Run Smarter, <br />Train Harder
             </h1>
-            <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-lg">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
               Personalized training, real-time feedback, and data-driven insights to help you become a better runner.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-stride-blue hover:bg-stride-blue-dark text-white font-medium rounded-full h-12 px-8 text-base">
                 Join the Waitlist
               </Button>
-              <a href="#features" className="inline-flex items-center justify-center h-12 px-8 text-base font-medium text-gray-300 border border-gray-700 rounded-full hover:bg-gray-800 transition-colors">
+              <a href="#features" className="inline-flex items-center justify-center h-12 px-8 text-base font-medium text-gray-600 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
                 Learn More
                 <ArrowDown size={16} className="ml-2 animate-bounce-subtle" />
               </a>
