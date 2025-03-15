@@ -1,4 +1,7 @@
-# Welcome to your Lovable project
+# StrideAI landing page
+
+## Project info 
+# **Coming soon**
 
 ## Project info
 
