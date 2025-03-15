@@ -12,7 +12,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen w-full snap-proximity">
+    <div className="dark min-h-screen w-full snap-proximity">
       <Navbar />
       <main>
         <Hero />

@@ -2,7 +2,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-	darkMode: ["class"],
+	darkMode: "class",
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -162,7 +162,7 @@ export default {
 				]
 			},
 			backgroundImage: {
-				'hero-pattern': 'linear-gradient(to right, rgba(14, 165, 233, 0.05), rgba(16, 185, 129, 0.05))',
+				'hero-pattern': 'linear-gradient(to right, rgba(14, 165, 233, 0.1), rgba(16, 185, 129, 0.1))',
 				'cta-gradient': 'linear-gradient(to right, rgba(14, 165, 233, 0.8), rgba(16, 185, 129, 0.8))'
 			}
 		}
