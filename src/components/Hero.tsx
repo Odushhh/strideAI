@@ -8,7 +8,20 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 animate-fade-in">
-            <div className="chip">AI-Powered Running Coach</div>
+            <div className="flex items-center mb-4">
+              <div className="mr-3 flex items-center justify-center">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-stride-blue">
+                  <circle cx="21" cy="21" r="20" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M28.5 14C29.3284 14 30 13.3284 30 12.5C30 11.6716 29.3284 11 28.5 11C27.6716 11 27 11.6716 27 12.5C27 13.3284 27.6716 14 28.5 14Z" fill="currentColor"/>
+                  <path d="M25.5 19L22 22.5L19 19.5L13 25.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M23 16.5L26.5 13C27.1 12.4 28 12.5 28.5 13C29 13.5 30.5 15 30.5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M13 29L19 23L22 26L28.5 19.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16.5 17C17.3284 17 18 16.3284 18 15.5C18 14.6716 17.3284 14 16.5 14C15.6716 14 15 14.6716 15 15.5C15 16.3284 15.6716 17 16.5 17Z" fill="currentColor"/>
+                </svg>
+                <span className="font-bold text-2xl tracking-tight text-stride-gray-dark ml-2">StrideAI</span>
+              </div>
+              <div className="chip">AI-Powered Running Coach</div>
+            </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight text-gray-900 leading-tight">
               Run Smarter, <br />Train Harder
             </h1>
