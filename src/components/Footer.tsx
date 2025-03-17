@@ -1,21 +1,16 @@
-
 import { Twitter, Instagram, Facebook, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-stride-gray-dark text-white py-16">
-      <div className="container mx-auto px-4">
+    <footer className="bg-[#434B5A] text-white py-16">
+      <div className="container mx-auto px-4 bg-[#434B5A]">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="relative h-8 w-8 flex items-center justify-center bg-white rounded-lg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-stride-blue">
-                  <path d="M19 6V5C19 3.89543 18.1046 3 17 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                  <path d="M12 8L16 12L12 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M8 12H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+            <div className="flex flex-col mb-4">
+              <div className="font-bold text-3xl tracking-tight leading-none text-[#808080]">
+                Stride<span className="text-[#FAFAFA]">AI</span>
               </div>
-              <span className="font-bold text-lg tracking-tight">StrideAI</span>
+              {/*<span className="text-sm text-gray-400 mt-1">AI Running Coach</span> */}
             </div>
             <p className="text-gray-400 mb-6">
               Your personal AI running coach, helping you achieve your running goals with personalized training.
@@ -67,8 +62,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          © 2023 StrideAI Coach. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-300 text-sm">
+          © 2025 StrideAI. All rights reserved.
         </div>
       </div>
     </footer>

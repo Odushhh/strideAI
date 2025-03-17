@@ -1,4 +1,3 @@
-
 const benefits = [
   {
     stat: "93%",
@@ -20,7 +19,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="section-container bg-gray-50">
+    <section id="benefits" className="section-container bg-[#F9F8F1]">
       <div className="text-center">
         <div className="chip">Benefits</div>
         <h2 className="section-heading">Why Runners Choose StrideAI Coach</h2>
@@ -33,9 +32,9 @@ const Benefits = () => {
         {benefits.map((benefit, index) => (
           <div 
             key={index} 
-            className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center transform transition-all duration-300 hover:shadow-md hover:translate-y-[-5px]"
+            className="bg-[#FFFFFF] p-8 rounded-2xl shadow-sm border border-gray-100 text-center transform transition-all duration-300 hover:shadow-md hover:translate-y-[-5px]"
           >
-            <div className="text-4xl md:text-5xl font-bold text-stride-blue mb-3">{benefit.stat}</div>
+            <div className="text-4xl md:text-5xl font-bold text-[#2E5E3E] mb-3">{benefit.stat}</div>
             <p className="text-gray-600">{benefit.description}</p>
           </div>
         ))}

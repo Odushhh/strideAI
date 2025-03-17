@@ -1,4 +1,3 @@
-
 import { Star } from 'lucide-react';
 
 const testimonials = [
@@ -24,6 +23,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
+    
     <section id="testimonials" className="section-container">
       <div className="text-center">
         <div className="chip">Testimonials</div>
@@ -37,11 +37,11 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div 
             key={index} 
-            className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full"
+            className="bg-[#ECEEF4] p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full"
           >
             <div className="flex items-center gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={16} className="fill-stride-blue text-stride-blue" />
+                <Star key={i} size={16} className="fill-[#2E5E3E] text-[#2E5E3E]" />
               ))}
             </div>
             <p className="text-gray-600 italic mb-6 flex-grow">"{testimonial.quote}"</p>

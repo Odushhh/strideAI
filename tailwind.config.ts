@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
 	content: [
@@ -62,12 +63,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				stride: {
-					blue: '#0EA5E9',
-					'blue-dark': '#0284C7',
-					green: '#10B981',
-					'green-dark': '#059669',
-					gray: '#F9FAFB',
-					'gray-dark': '#1F2937'
+					blue: '#2E5E3E',
+					'blue-dark': '#2E5E3E',
+					green: '#3D7B52',
+					'green-dark': '#2E5E3E',
+					gray: '#F9F8F1',
+					'gray-dark': '#444B5A',
+					'bg-light': '#F9F8F1'
 				}
 			},
 			borderRadius: {
@@ -160,10 +162,10 @@ export default {
 				]
 			},
 			backgroundImage: {
-				'hero-pattern': 'linear-gradient(to right, rgba(14, 165, 233, 0.1), rgba(16, 185, 129, 0.1))',
-				'cta-gradient': 'linear-gradient(to right, rgba(14, 165, 233, 0.8), rgba(16, 185, 129, 0.8))'
+				'hero-pattern': 'linear-gradient(to right, rgba(61, 123, 82, 0.1), rgba(68, 75, 90, 0.1))',
+				'cta-gradient': 'linear-gradient(to right, rgba(61, 123, 82, 0.8), rgba(68, 75, 90, 0.8))'
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [animate],
 } satisfies Config;

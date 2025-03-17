@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
@@ -37,40 +36,42 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="section-container bg-gray-50">
-      <div className="text-center">
-        <div className="chip">FAQ</div>
-        <h2 className="section-heading">Frequently Asked Questions</h2>
-        <p className="section-subheading">
-          Have questions about StrideAI? Find answers to the most common questions below.
-        </p>
-      </div>
+    <section id="faq" className="w-full bg-[#FFF] text-gray-800 py-20 md:py-28">
+      <div className="max-w-7xl mx-auto px-6 md:px-10">
+        <div className="text-center mb-12">
+          <div className="chip">FAQ</div>
+          <h2 className="section-heading text-gray-800">Frequently Asked Questions</h2>
+          <p className="section-subheading text-gray-600">
+            Have questions about StrideAI? Find answers to the most common questions below.
+          </p>
+        </div>
 
-      <div className="max-w-3xl mx-auto mt-12">
-        {faqs.map((faq, index) => (
-          <div 
-            key={index}
-            className="mb-4 border border-gray-200 rounded-xl overflow-hidden bg-white"
-          >
-            <button
-              className="w-full p-6 text-left flex items-center justify-between focus:outline-none"
-              onClick={() => toggleFAQ(index)}
-            >
-              <h3 className="text-lg font-medium text-stride-gray-dark">{faq.question}</h3>
-              {openIndex === index ? 
-                <ChevronUp className="text-stride-blue flex-shrink-0" /> : 
-                <ChevronDown className="text-gray-400 flex-shrink-0" />
-              }
-            </button>
+        <div className="w-full md:w-[75%] mx-auto">
+          {faqs.map((faq, index) => (
             <div 
-              className={`px-6 transition-all duration-300 ease-in-out overflow-hidden ${
-                openIndex === index ? 'max-h-96 pb-6' : 'max-h-0'
-              }`}
+              key={index}
+              className="mb-4 border border-gray-200 rounded-xl overflow-hidden shadow-sm bg-[#FAFAFA]"
             >
-              <p className="text-gray-600">{faq.answer}</p>
+              <button
+                className="bg-[#FAFAFA] w-full p-6 text-left flex items-center justify-between focus:outline-none"
+                onClick={() => toggleFAQ(index)}
+              >
+                <h3 className="text-lg font-medium text-gray-800">{faq.question}</h3>
+                {openIndex === index ? 
+                  <ChevronUp className="text-[#3D7B52] flex-shrink-0" /> : 
+                  <ChevronDown className="text-gray-500 flex-shrink-0" />
+                }
+              </button>
+              <div 
+                className={`bg-white transition-all duration-300 ease-in-out overflow-hidden ${
+                  openIndex === index ? 'max-h-96 py-6 px-6' : 'max-h-0'
+                }`}
+              >
+                <p className="text-gray-600">{faq.answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
